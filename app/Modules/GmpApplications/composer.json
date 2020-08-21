@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/gmpapplications",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\GmpApplications\\Providers\\GmpApplicationsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\GmpApplications\\": ""
+        }
+    }
+}

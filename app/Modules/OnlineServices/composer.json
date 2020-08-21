@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/onlineservices",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\OnlineServices\\Providers\\OnlineServicesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\OnlineServices\\": ""
+        }
+    }
+}

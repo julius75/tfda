@@ -1,0 +1,16 @@
+{
+    "name": "OrganisationConfig",
+    "alias": "organisationconfig",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\OrganisationConfig\\Providers\\OrganisationConfigServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

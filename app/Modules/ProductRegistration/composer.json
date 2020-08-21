@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/productregistration",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\ProductRegistration\\Providers\\ProductRegistrationServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\ProductRegistration\\": ""
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "PremiseRegistration",
+    "alias": "premiseregistration",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\PremiseRegistration\\Providers\\PremiseRegistrationServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

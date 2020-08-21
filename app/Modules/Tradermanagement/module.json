@@ -1,0 +1,16 @@
+{
+    "name": "Tradermanagement",
+    "alias": "tradermanagement",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\Tradermanagement\\Providers\\TradermanagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

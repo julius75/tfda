@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/organisationconfig",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\OrganisationConfig\\Providers\\OrganisationConfigServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\OrganisationConfig\\": ""
+        }
+    }
+}

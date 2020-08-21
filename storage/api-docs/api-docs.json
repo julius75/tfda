@@ -1,0 +1,108 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "TFDA MIS",
+        "description": "TFDA MIS Version 2.0 is the upgraded version of TFDA IMIS Version 1.0.",
+        "contact": {
+            "email": "ronohhilla@gmail.com"
+        },
+        "license": {
+            "name": "SoftClans License 1.0",
+            "url": "http://www.softclans.co.ke"
+        },
+        "version": "2.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:91/tfda_mis_2018/trunk/mis/development",
+            "description": "TFDA HOST SERVER"
+        }
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Handle user login",
+                "description": " ",
+                "operationId": "handleLogin",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Email Address",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Secret Password",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "_token",
+                        "in": "query",
+                        "description": "CSRF Token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User Logged in successfully"
+                    },
+                    "default": {
+                        "description": "an \"unexpected\" error"
+                    }
+                }
+            }
+        },
+        "/administration/getAdminParamFromModel": {
+            "get": {
+                "tags": [
+                    "Administration"
+                ],
+                "summary": "Get Administration Module Parameters",
+                "description": " ",
+                "operationId": "getAdminParamFromModel",
+                "parameters": [
+                    {
+                        "name": "model_name",
+                        "in": "query",
+                        "description": "Name of the backend model class",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "strict_mode",
+                        "in": "query",
+                        "description": "Check for disabled records",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Records fetched successfully"
+                    },
+                    "default": {
+                        "description": "an \"unexpected\" error"
+                    }
+                }
+            }
+        }
+    }
+}

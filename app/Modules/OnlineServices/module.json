@@ -1,0 +1,16 @@
+{
+    "name": "OnlineServices",
+    "alias": "onlineservices",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\OnlineServices\\Providers\\OnlineServicesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

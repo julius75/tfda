@@ -1,0 +1,16 @@
+{
+    "name": "ProductRegistration",
+    "alias": "productregistration",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\ProductRegistration\\Providers\\ProductRegistrationServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
